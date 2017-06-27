@@ -3,7 +3,7 @@
 # Go Explore
 
 Let's learn Go Lang!  
-Just some code snippets while learning Go ...
+Just some code snippets while learning ...
 
 The good parts i add to my [awesome-go](https://github.com/ellerbrock/awesome-go) list.
 
