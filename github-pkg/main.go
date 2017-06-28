@@ -11,5 +11,6 @@ func main() {
 	content, err := ioutil.ReadFile("x.txt")
 	check.Error(err)
 
+	// we only arrive here if no error ...
 	fmt.Printf("file content:\n\n%v", content)
 }

@@ -14,8 +14,14 @@ func main() {
 	// title
 	note.Title = "Maik Ellerbrock ⛅  ✨"
 
-	// subtitle
-	// note.Subtitle = "Lets hack on stuff ..."
+	// link
+	note.Link = "http://github.com/ellerbrock" //or BundleID like: com.apple.Terminal
+
+	// group indentifier (show one notification per group)
+	note.Group = "com.frapsoft.notifier.identifier"
+
+		// content icon
+	note.ContentImage = "frapsoft.png"
 
 	/* play Sound
 
@@ -36,20 +42,16 @@ func main() {
 
 	note.Sound = gosxnotifier.Glass
 
-	// group indentifier (show one notification per group)
-	note.Group = "com.frapsoft.notifier.identifier"
+
+	// subtitle
+	// note.Subtitle = "Lets hack on stuff ..."
 
 	// use system icons
 	// note.Sender = "com.apple.Safari"
 
-	// link
-	note.Link = "http://github.com/ellerbrock" //or BundleID like: com.apple.Terminal
-
 	// app icon
 	// note.AppIcon = "frapsoft.png"
 
-	// content icon
-	note.ContentImage = "frapsoft.png"
 
 	// push notification
 	err := note.Push()
