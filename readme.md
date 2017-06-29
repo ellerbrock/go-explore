@@ -1,4 +1,4 @@
-![go explore - learn go lang](https://github.frapsoft.com/top/awesome-go.png?v=101)
+![go explore - learn go lang](https://github.frapsoft.com/top/go.png?v=101)
 
 # Go Explore
 

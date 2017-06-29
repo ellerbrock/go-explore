@@ -16,11 +16,16 @@ func main() {
 	setEnv()
 
 	// get the default values
-	devDir := viper.Get("devDir")
-	fmt.Println("devDir:", devDir)
+	fmt.Println("DEV Folder:", viper.Get("devDir"))
+	fmt.Println("PROD Folder:", viper.Get("prodDir"))
+
+	// get value from config
+	fmt.Println("Firstname:", viper.Get("firstName"))
+	fmt.Println("Lastname:", viper.Get("lastName"))
+	fmt.Println("Age:", viper.Get("age"))
 
 	// get environment variable
-	fmt.Println("repo:", getEnv("repo"))
+	fmt.Println("Repository:", getEnv("repo"))
 }
 
 func setDefaults() {
@@ -30,7 +35,7 @@ func setDefaults() {
 
 func setConfig() {
 	viper.SetConfigName("config")
-	viper.AddConfigPath("./dev-viper")
+	viper.AddConfigPath(".")
 	err := viper.ReadInConfig()
 	checkError(err)
 }
