@@ -1,4 +1,4 @@
-firstName = "Maik"
+name = "Maik"
 lastName = "Ellerbrock"
 age = 35
 isAwesome = true
