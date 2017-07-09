@@ -1,5 +1,0 @@
-{
-    "commands": [
-        "**/*.go : go run {absPath}{filename}"
-    ]
-}
