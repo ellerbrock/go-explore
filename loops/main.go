@@ -1,31 +1,29 @@
 package main
 
-import (
-	"fmt"
-	"strconv"
-)
+import "fmt"
 
 func main() {
-	res := sum(1, 2, 3, 4, 5)
-	fmt.Println("\nresult:", res)
 
-	counter(10)
-
-}
-
-func sum(vals ...int) int {
-	sum := 0
-	for i := range vals {
-		fmt.Println("add: ", vals[i])
-		sum += vals[i]
-		fmt.Println("sum:" + strconv.Itoa(sum))
-	}
-	return sum
-}
-
-func counter(cnt int) {
-	for i := cnt; i >= 0; i-- {
-		fmt.Printf("Counter: %d\n", i)
+	for i := 0; i <= 3; i++ {
+		fmt.Println(i)
 	}
 
+	fmt.Println("----")
+
+	x := 0
+	for x <= 3 {
+		fmt.Println(x)
+		x++
+	}
+
+	fmt.Println("----")
+
+	x = 0
+	for {
+		fmt.Println(x)
+		if x >= 3 {
+			break
+		}
+		x++
+	}
 }
