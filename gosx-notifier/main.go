@@ -20,7 +20,7 @@ func main() {
 	// group indentifier (show one notification per group)
 	note.Group = "com.frapsoft.notifier.identifier"
 
-		// content icon
+	// content icon
 	note.ContentImage = "frapsoft.png"
 
 	/* play Sound
@@ -42,7 +42,6 @@ func main() {
 
 	note.Sound = gosxnotifier.Glass
 
-
 	// subtitle
 	// note.Subtitle = "Lets hack on stuff ..."
 
@@ -51,7 +50,6 @@ func main() {
 
 	// app icon
 	// note.AppIcon = "frapsoft.png"
-
 
 	// push notification
 	err := note.Push()
